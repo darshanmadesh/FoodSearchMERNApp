@@ -18,11 +18,11 @@ const Recipe = ({ recipe }) => {
                 </Link>
 
                 <Card.Text as='div'>
-                    <Rating value={4.5} text={`  50 reviews`} color='gold' />
+                    <Rating value={recipe.Review} text={`  ${recipe.ReviewNum} reviews`} color='gold' />
                 </Card.Text>
 
                 <Card.Text as='h6'>
-                    <h6>Total Time : {recipe["Total Time"]} minutes</h6>
+                    <h6>Total Time : {recipe.TotalTime} minutes</h6>
                 </Card.Text>
 
                 <Card.Text as='h6'>
