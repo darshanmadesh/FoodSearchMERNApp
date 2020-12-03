@@ -6,10 +6,10 @@ import Recipe from "../components/Recipe";
 const HomeScreen = () => {
     return (
         <>
-            <h1>Top Recipes</h1>
+            <h1 className='text-primary'>Top Recipes</h1>
             <Row>
                 {recipes.map((recipe) => (
-                    <Col key={recipe.Name} sm={12} md={6} lg={4} xl={3}>
+                    <Col key={recipe.Name} sm={4}>
                         <Recipe recipe={recipe} />
                     </Col>
                 ))}
