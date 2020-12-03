@@ -12,7 +12,7 @@ app.get("/api/recipes", (req, res) => {
 });
 
 app.get("/api/recipes/:id", (req, res) => {
-    const recipe = recipes.find((r) => r.Ingredients.length === req.params.id);
+    const recipe = recipes.find((r) => r.Name === req.params.id);
     res.json(recipe);
 });
 
